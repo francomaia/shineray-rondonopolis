@@ -1,12 +1,25 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
+import {copyFileSync} from 'node:fs';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
+
+const preserveSeoFiles = () => ({
+  name: 'preserve-seo-files',
+  closeBundle() {
+    for (const file of ['robots.txt', 'sitemap.xml']) {
+      copyFileSync(
+        path.resolve(__dirname, file),
+        path.resolve(__dirname, 'dist', file),
+      );
+    }
+  },
+});
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), preserveSeoFiles()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
