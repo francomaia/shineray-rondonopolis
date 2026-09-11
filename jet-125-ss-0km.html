@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JET 125 SS 0KM - Shineray Rondonópolis</title>
+    <meta name="description" content="As melhores motos Shineray em Rondonópolis - MT. Modelos 0km, peças originais e assistência técnica. Confira nossas ofertas e saia de moto nova!">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/593SdgDD/faviconsiteshineray.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --color-white: #FFFFFF;
+            --color-black: #111111;
+            --color-gray-light: #F5F5F5;
+            --color-gray-text: #666666;
+            --color-red: #CC0000;
+            --font-main: 'Manrope', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--color-black);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-top: 80px; /* offset for sticky header */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-red);
+            color: var(--color-white);
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #a30000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(204, 0, 0, 0.2);
+            color: var(--color-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo img {
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-menu li a {
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            color: var(--color-red);
+        }
+
+        /* Mega Menu Styles */
+        .nav-menu li {
+            position: static;
+        }
+
+        .has-dropdown:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            padding: 40px 0;
+            z-index: 999;
+            border-top: 1px solid var(--color-gray-light);
+        }
+
+        .mega-menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .mega-menu-col h3 {
+            color: var(--color-red);
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mega-menu-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .mega-menu-col ul li a {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-black);
+            text-transform: uppercase;
+            transition: color 0.2s ease;
+            display: block;
+        }
+
+        .mega-menu-col ul li a:hover {
+            color: var(--color-red);
+        }
+
+        .nav-menu li a i {
+            font-size: 10px;
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .has-dropdown:hover > a i {
+            transform: rotate(180deg);
+            color: var(--color-red);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Product Detail Section */
+        .product-detail {
+            padding: 60px 0 80px 0;
+        }
+
+        .breadcrumb {
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: var(--color-gray-text);
+        }
+
+        .breadcrumb a {
+            color: var(--color-black);
+            font-weight: 600;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--color-red);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .product-image-container {
+            position: relative;
+            background-color: var(--color-gray-light);
+            border-radius: 12px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .color-selection {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .color-selection h4 {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .color-circles {
+            display: flex;
+            gap: 8px;
+        }
+
+        .color-circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.2s ease, border 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .color-circle:hover {
+            transform: scale(1.1);
+        }
+
+        .color-circle.active {
+            border-color: var(--color-red);
+            transform: scale(1.1);
+        }
+
+        .product-image-container img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-label {
+            font-size: 14px;
+            color: var(--color-gray-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .product-price {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--color-red);
+            margin-bottom: 30px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: var(--color-gray-text);
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .specs-list {
+            margin-bottom: 40px;
+        }
+
+        .specs-list h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #EAEAEA;
+            padding-bottom: 10px;
+        }
+
+        .specs-list ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #EAEAEA;
+            font-size: 15px;
+        }
+
+        .specs-list ul li span:first-child {
+            color: var(--color-gray-text);
+        }
+
+        .specs-list ul li span:last-child {
+            font-weight: 600;
+        }
+
+        /* Location & Social Section */
+        .location-social {
+            padding: 80px 0;
+            background-color: var(--color-white);
+        }
+
+        .location-social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            height: 300px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .instagram-simple-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .ig-simple-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            gap: 15px;
+        }
+
+        .ig-simple-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .ig-simple-profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .ig-simple-profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ig-simple-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .ig-simple-handle {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000000;
+            letter-spacing: 0.5px;
+        }
+
+        .ig-simple-cta {
+            font-size: 16px;
+            color: #666666;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ig-simple-arrow {
+            font-size: 16px;
+            color: #666666;
+            transition: transform 0.3s ease;
+        }
+
+        .ig-simple-link:hover .ig-simple-arrow {
+            transform: translateX(8px);
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .contact-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-form-text h2 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .contact-form-container {
+            background-color: #111;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .g-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .g-form input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: var(--color-white);
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .g-form input:focus {
+            outline: none;
+            border-color: var(--color-red);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 60px 0 20px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo img {
+            height: 40px;
+            
+            margin-bottom: 20px;
+        }
+
+        .footer-about p {
+            color: #AAAAAA;
+            font-size: 14px;
+        }
+
+        .footer-contact h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--color-white);
+        }
+
+        .footer-contact ul li {
+            margin-bottom: 12px;
+            color: #AAAAAA;
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .footer-contact ul li i {
+            margin-top: 4px;
+            color: var(--color-red);
+        }
+
+        .footer-social h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--color-white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333333;
+            padding-top: 20px;
+            text-align: center;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .contact-form-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .contact-form-text h2 {
+                font-size: 36px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--color-white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-title {
+                font-size: 36px;
+            }
+
+            .location-social-grid {
+                grid-template-columns: 1fr;
+            }
+            .ig-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .ig-stats {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5566996134297" target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="https://i.postimg.cc/Jn6S8cNY/Logo-da-hero-para-fundo-branco.png" alt="Shineray Rondonópolis">
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li class="has-dropdown">
+                    <a href="motos.html">Motos <i class="fa-solid fa-chevron-down"></i></a>
+                    
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="mega-menu-grid">
+                                <div class="mega-menu-col">
+                                    <h3>NOSSAS MOTOS</h3>
+                                    <ul>
+                                        <li><a href="phoenix-50-s.html">Phoenix 50cc</a></li>
+                                        <li><a href="jet-50-s-turbo.html">Jet 50cc</a></li>
+                                        <li><a href="jet-125-ss.html">Jet SS 125cc</a></li>
+                                        <li><a href="rio-125.html">Rio 125cc</a></li>
+                                        <li><a href="new-jet-125.html">New Jet 125cc</a></li>
+                                        <li><a href="new-jef-150-efi.html">New JEF 150cc</a></li>
+                                        <li><a href="shi-175-carburada.html">SHI 175cc</a></li>
+                                        <li><a href="shi-175-efi.html">SHI EFI 175cc</a></li>
+                                        <li><a href="jef-150-s-carburada.html">JEF 150 S CARBURADA</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-col">
+                                    <h3>LINHA COMPLETA</h3>
+                                    <ul>
+                                        <li><a href="motos.html#contato">Urban EFI 150cc</a></li>
+                                        <li><a href="motos.html#contato">Storm EFI 200cc</a></li>
+                                        <li><a href="motos.html#contato">Flash 250cc</a></li>
+                                        <li><a href="motos.html#contato">Iron 250cc</a></li>
+                                        <li><a href="motos.html#contato">Denver 250cc</a></li>
+                                    </ul>
+                                </div></div></div></div></li>
+                
+                <li><a href="index.html#revisao">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Início</a> &gt; <a href="motos.html">Motos</a> &gt; <span>JET 125 SS 0KM</span>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-image-container">
+                    <img id="mainProductImage" src="https://i.postimg.cc/Z5XHRRbv/Urban-EFI-150cc.png" alt="JET 125 SS 0KM Branca com Azul" referrerPolicy="no-referrer">
+                    
+                    <div class="color-selection">
+                        <h4>Escolha sua cor:</h4>
+                        <div class="color-circles">
+                            <div class="color-circle active" style="background-color: #000000;" data-img="https://marcelomotos.exascompany.com.br/wp-content/uploads/2026/03/imgi_8_COR-JET-125SS-EFI-1.webp" title="Preta"></div>
+                            <div class="color-circle" style="background-color: #FFFFFF; border: 1px solid #ddd;" data-img="https://marcelomotos.exascompany.com.br/wp-content/uploads/2026/03/imgi_7_COR-JET-125SS-EFI-2.webp" title="Branca"></div>
+                            <div class="color-circle" style="background-color: #CC0000;" data-img="https://marcelomotos.exascompany.com.br/wp-content/uploads/2026/03/imgi_9_COR-JET-125SS-EFI-3.webp" title="Vermelha"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <span class="product-label">Shineray</span>
+                    <h1 class="product-title">JET 125 SS 0KM</h1>
+                    <div class="product-price">R$ 13.990,00</div>
+                    
+                    <p class="product-description">
+                        A JET 125 SS 0KM é a versão esportiva da nossa consagrada 125. Com detalhes exclusivos e acabamento premium, ela oferece a mesma economia e praticidade com um toque extra de sofisticação e estilo para quem quer se destacar.
+                    </p>
+                    
+                    <div class="specs-list">
+                        <h4>Especificações Técnicas</h4>
+                        <ul>
+                            <li><span>Cilindrada</span> <span>125cc</span></li>
+                            <li><span>Câmbio</span> <span>Semiautomático</span></li>
+                            <li><span>Partida</span> <span>Elétrica / Pedal</span></li>
+                            <li><span>Freios</span> <span>Disco (Dianteiro) / Tambor (Traseiro)</span></li>
+                            <li><span>Rodas</span> <span>Liga Leve (Design SS)</span></li>
+                            <li><span>Capacidade do Tanque</span> <span>3 Litros</span></li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://wa.me/5566996134297?text=Olá! Gostaria de mais informações sobre a JET 125 SS 0KM" target="_blank" class="btn-primary">
+                        <i class="fa-brands fa-whatsapp"></i> Fale com um Consultor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Location & Social Section -->
+    <section class="location-social" id="localizacao">
+        <div class="container">
+            <div class="location-social-grid">
+                <!-- Map -->
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?q=R.%20Dom%20Pedro%20II,%20672%20-%20Vila%20Aurora,%20Rondon%C3%B3polis%20-%20MT,%2078740-024&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <!-- Instagram -->
+                <div class="instagram-simple-container">
+                    <a href="https://www.instagram.com/shinerayrondonopolis/" target="_blank" class="ig-simple-link">
+                        <div class="ig-simple-profile-pic">
+                            <img src="https://i.postimg.cc/HWBkC83p/465837466-876499130914666-5497052890159326958-n-(1).jpg" alt="shinerayrondonopolis">
+                        </div>
+                        <div class="ig-simple-text">
+                            <span class="ig-simple-handle">@shinerayrondonopolis</span>
+                            <span class="ig-simple-cta">Siga-nos no Instagram <i class="fa-solid fa-arrow-right ig-simple-arrow"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contato">
+        <div class="container">
+            <div class="contact-form-grid">
+                
+                <div class="contact-form-text">
+                    <h2 style="font-size: 42px; font-weight: 800; line-height: 1.1; margin-bottom: 20px;"><span style="color: var(--color-red);">Simule seu parcelamento</span></h2>
+                    <p style="color: #888; font-size: 18px; font-weight: 500;">Para simular o parcelamento, precisamos do CPF, telefone e o modelo de interesse.</p>
+                </div>
+                <div class="contact-form-container">
+                    
+                    <form id="whatsapp-form-inline" class="g-form" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <input type="tel" id="inline-telefone" placeholder="Telefone" required style="width: 100%; padding: 18px; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 12px; font-family: inherit; font-size: 16px;">
+                            <input type="text" id="inline-cpf" placeholder="CPF" required style="width: 100%; padding: 18px; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 12px; font-family: inherit; font-size: 16px;">
+                        </div>
+                        <div style="position: relative;">
+                            <select id="inline-modelo" required style="width: 100%; padding: 18px; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 12px; font-family: inherit; font-size: 16px; appearance: none; width: 100%;">
+                                <option value="" disabled >Modelo de Interesse</option>\n<option value="Phoenix 50cc" >Phoenix 50cc</option>\n<option value="Jet 50cc" >Jet 50cc</option>\n<option value="Jet SS 125cc" selected>Jet SS 125cc</option>\n<option value="Rio 125cc" >Rio 125cc</option>\n<option value="New Jet 125cc" >New Jet 125cc</option>\n<option value="New JEF 150cc" >New JEF 150cc</option>\n<option value="SHI 175cc" >SHI 175cc</option>\n<option value="SHI EFI 175cc" >SHI EFI 175cc</option>\n<option value="JEF 150 S CARBURADA" >JEF 150 S CARBURADA</option>\n<option value="Urban EFI 150cc" >Urban EFI 150cc</option>\n<option value="Storm EFI 200cc" >Storm EFI 200cc</option>\n<option value="Flash 250cc" >Flash 250cc</option>\n<option value="Iron 250cc" >Iron 250cc</option>\n<option value="Denver 250cc" >Denver 250cc</option>\n<option value="Worker 125cc" >Worker 125cc</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #666;"></i>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 22px; border-radius: 12px; background: #CC0000; color: white; font-weight: 800; font-size: 18px; text-transform: uppercase;">
+                            <i class="fa-brands fa-whatsapp"></i> QUERO SIMULAR AGORA
+                        </button>
+                    </form>
+
+                    <script id="inline-form-script">
+                        (function() {
+                            const f = document.getElementById('whatsapp-form-inline');
+                            if(!f) return;
+                            const tel = document.getElementById('inline-telefone');
+                            const cpf = document.getElementById('inline-cpf');
+                            const maskPhone = (v) => { v = v.replace(/\D/g, ""); v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); v = v.replace(/(\d)(\d{4})$/, "$1-$2"); return v; };
+                            const maskCPF = (v) => { v = v.replace(/\D/g, ""); v = v.replace(/(\d{3})(\d)/, "$1.$2"); v = v.replace(/(\d{3})(\d)/, "$1.$2"); v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); return v; };
+                            if(tel) {
+                                tel.oninput = (e) => e.target.value = maskPhone(e.target.value);
+                            }
+                            if(cpf) {
+                                cpf.oninput = (e) => e.target.value = maskCPF(e.target.value);
+                            }
+                            f.addEventListener('submit', (e) => {
+                                e.preventDefault();
+                                const m = document.getElementById('inline-modelo').value;
+                                const text = 'Olá! Gostaria de simular um parcelamento.\n\n*Modelo:* ' + m + '\n*Telefone:* ' + tel.value + '\n*CPF:* ' + cpf.value;
+                                window.open('https://wa.me/5566996134297?text=' + encodeURIComponent(text), '_blank');
+                            });
+                        })();
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://i.postimg.cc/rmn7TC1v/Logo-do-rodape-para-fundo-escuro.png" alt="Shineray Rondonópolis">
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> R. Dom Pedro II, 672 - Vila Aurora, Rondonópolis - MT, 78740-024</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> (66) 99613-4297</li>
+                                            
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <ul style="display: flex; gap: 15px;">
+                        <li><a href="https://www.instagram.com/shinerayrondonopolis/" target="_blank" style="font-size: 24px; color: #fff;"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/shinerayrondonopolis/" target="_blank" style="font-size: 24px; color: #fff;"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Shineray. Todos os direitos reservados.</p>
+                <div class="credits" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px; font-size: 12px; color: #AAAAAA;">
+                    <span>Desenvolvido por: <a href="https://instagram.com/ofrancomaia" target="_blank" style="color: var(--color-white); font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='var(--color-red)'" onmouseout="this.style.color='var(--color-white)'">@ofrancomaia</a></span>
+                    <span style="width: 1px; height: 12px; background-color: #555;"></span>
+                    <a href="https://exascompany.com.br" target="_blank" style="display: flex; align-items: center; gap: 6px; color: var(--color-white); font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='var(--color-red)'" onmouseout="this.style.color='var(--color-white)'">
+                        <img src="https://exascompany.com.br/wp-content/uploads/2025/08/FAVICON-2-1024x1024.webp" alt="Exas" style="height: 18px; width: 18px; border-radius: 4px; object-fit: cover;">
+                        Exas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JS -->
+    <script>
+        // Color Selection Logic
+        const mainImage = document.getElementById('mainProductImage');
+        const colorCircles = document.querySelectorAll('.color-circle');
+        const imageContainer = document.querySelector('.product-image-container');
+
+        colorCircles.forEach(circle => {
+            circle.addEventListener('click', function() {
+                // Update active state
+                colorCircles.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+
+                // Update image with fade effect
+                const newImg = this.getAttribute('data-img');
+                if (mainImage && newImg) {
+                    imageContainer.style.opacity = '0';
+                    setTimeout(() => {
+                        mainImage.src = newImg;
+                        imageContainer.style.opacity = '1';
+                    }, 300);
+                }
+
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+
+        // Form Submission Handler
+        const gForm = document.getElementById('google-sheet-form');
+        if (gForm) {
+            gForm.addEventListener('submit', function(e) {
+                if (gForm.action.includes('YOUR_SCRIPT_ID')) {
+                    e.preventDefault();
+                    alert('Por favor, configure a URL do Google Apps Script no atributo "action" do formulário.');
+                }
+
+        }
+    </script>
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+<!-- UNIFIED MODAL SYSTEM -->
+<div class="modal-overlay" id="unifiedModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 20000; align-items: center; justify-content: center; backdrop-filter: blur(8px); padding: 20px;">
+    <div class="modal-container" style="background: white; width: 100%; max-width: 600px; padding: 40px; border-radius: 20px; position: relative; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); animation: modalIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); max-height: 95vh; overflow-y: auto;">
+        <button onclick="closeCurrentModal()" style="position: absolute; top: 20px; right: 20px; border: none; background: #f0f0f0; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; color: #666; font-size: 24px; display: flex; align-items: center; justify-content: center; z-index: 10;">&times;</button>
+        
+        <!-- Header Info Box (Image-like) -->
+        <div id="revision-info-box" style="display: none; background: #FFF5F5; border-radius: 12px; padding: 25px; margin-bottom: 25px; align-items: center; justify-content: space-between; border: 1px solid #FFE0E0;">
+            <div>
+                <span style="display: block; font-size: 14px; color: #666; margin-bottom: 5px;">Cilindrada Selecionada:</span>
+                <strong id="display-cilindrada" style="font-size: 24px; color: #111; font-weight: 800;">125cc a 150cc</strong>
+            </div>
+            <div style="text-align: right;">
+                <span id="display-type" style="display: block; font-size: 14px; color: #666; margin-bottom: 5px;">Revisão Preventiva</span>
+                <strong id="display-price" style="font-size: 28px; color: #CC0000; font-weight: 900;">R$ 159,90</strong>
+            </div>
+        </div>
+
+        <div id="simulation-header" style="text-align: center; margin-bottom: 30px;">
+            <h2 id="modal-title" style="font-size: 28px; font-weight: 900; color: #111; margin-bottom: 10px; text-transform: uppercase;">SIMULE SEU PARCELAMENTO</h2>
+            <p id="modal-subtitle" style="font-size: 15px; color: #666;">Preencha os dados para simularmos agora mesmo.</p>
+        </div>
+
+        <form id="unified-main-form" style="display: flex; flex-direction: column; gap: 15px;">
+            <input type="hidden" id="form-type" value="simulation">
+            
+            <!-- Row 1: Date and Time (Revision Only) -->
+            <div id="revision-top-row" style="display: none; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div>
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Data Preferida <span style="color: #CC0000;">*</span></label>
+                    <div style="position: relative;">
+                        <input type="date" id="field-data" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd; font-family: inherit;">
+                    </div>
+                </div>
+                <div>
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Horário Preferido <span style="color: #CC0000;">*</span></label>
+                    <div style="position: relative;">
+                        <input type="time" id="field-horario" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd; font-family: inherit;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Name (Revision Only) -->
+            <div id="field-nome-container" style="display: none;">
+                <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Nome Completo <span style="color: #CC0000;">*</span></label>
+                <input type="text" id="field-nome" placeholder="Seu nome" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd;">
+            </div>
+
+            <!-- Row 3: Contacts (Telefone & CPF & Email) -->
+            <div id="contacts-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div id="field-telefone-container">
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Telefone <span style="color: #CC0000;">*</span></label>
+                    <input type="tel" id="field-telefone" placeholder="(66) 99999-9999" required style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd;">
+                </div>
+                <div id="cpf-field-container">
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">CPF <span style="color: #CC0000;">*</span></label>
+                    <input type="text" id="field-cpf" placeholder="000.000.000-00" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd;">
+                </div>
+                <div id="field-email-container" style="grid-column: span 2;">
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Email <span style="color: #CC0000;">*</span></label>
+                    <input type="email" id="field-email" placeholder="seu@email.com" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd;">
+                </div>
+            </div>
+
+            <!-- Row 4: Model and Year -->
+            <div id="model-year-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div id="model-field-container" style="grid-column: span 2;">
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Modelo da Moto <span style="color: #CC0000;">*</span></label>
+                    <input type="text" id="field-modelo-texto" placeholder="Ex: Shineray XY 150" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd;">
+                    <select id="field-modelo-select" style="display: none; width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd; appearance: none;">
+                        <option value="" disabled selected>Selecione o modelo</option>
+                        <option value="Phoenix 50cc">Phoenix 50cc</option><option value="Jet 50cc">Jet 50cc</option><option value="Jet SS 125cc">Jet SS 125cc</option><option value="Rio 125cc">Rio 125cc</option><option value="New Jet 125cc">New Jet 125cc</option><option value="New JEF 150cc">New JEF 150cc</option><option value="SHI 175cc">SHI 175cc</option><option value="SHI EFI 175cc">SHI EFI 175cc</option><option value="JEF 150 S CARBURADA">JEF 150 S CARBURADA</option><option value="Urban EFI 150cc">Urban EFI 150cc</option><option value="Storm EFI 200cc">Storm EFI 200cc</option><option value="Flash 250cc">Flash 250cc</option><option value="Iron 250cc">Iron 250cc</option><option value="Denver 250cc">Denver 250cc</option><option value="Worker 125cc">Worker 125cc</option>
+                    </select>
+                </div>
+                <div id="ano-field-container">
+                    <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Ano da Moto</label>
+                    <input type="text" id="field-ano" placeholder="2024" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd;">
+                </div>
+            </div>
+
+            <!-- Row 5: Observations (Revision Only) -->
+            <div id="field-obs-container" style="display: none;">
+                <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #111; margin-bottom: 8px; display: block;">Observações Adicionais</label>
+                <textarea id="field-obs" placeholder="Descreva qualquer serviço adicional que você gostaria de realizar (limpeza, ajustes, etc.)" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fdfdfd; height: 100px; resize: none; font-family: inherit; font-size: 14px;"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" style="width: 100%; background: #CC0000; color: white; padding: 20px; border: none; border-radius: 12px; font-weight: 900; font-size: 16px; cursor: pointer; text-transform: uppercase; transition: background 0.3s; margin-top: 10px;">
+                Finalizar Agendamento
+            </button>
+        </form>
+    </div>
+</div>
+
+<style>
+    @keyframes modalIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    #unifiedModal select:focus, #unifiedModal input:focus, #unifiedModal textarea:focus { border-color: #CC0000; outline: none; background: #fff; }
+    #unifiedModal input[type="date"]::-webkit-calendar-picker-indicator, 
+    #unifiedModal input[type="time"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.2s;
+    }
+    #unifiedModal input[type="date"]::-webkit-calendar-picker-indicator:hover, 
+    #unifiedModal input[type="time"]::-webkit-calendar-picker-indicator:hover {
+        opacity: 1;
+    }
+</style>
+
+<script>
+(function() {
+    const modal = document.getElementById('unifiedModal');
+    const form = document.getElementById('unified-main-form');
+    const phoneInput = document.getElementById('field-telefone');
+    const cpfInput = document.getElementById('field-cpf');
+    
+    const mask = (v, type) => {
+        v = v.replace(/\D/g, "");
+        if(type === 'tel') { 
+            if(v.length > 10) {
+                v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, "($1) $2-$3");
+            } else {
+                v = v.replace(/^(\d{2})(\d{4})(\d{4}).*/, "($1) $2-$3");
+            }
+        }
+        else { v = v.replace(/(\d{3})(\d)/, "$1.$2"); v = v.replace(/(\d{3})(\d)/, "$1.$2"); v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); }
+        return v;
+    };
+
+    if(phoneInput) phoneInput.oninput = (e) => e.target.value = mask(e.target.value, 'tel');
+    if(cpfInput) cpfInput.oninput = (e) => e.target.value = mask(e.target.value, 'cpf');
+
+    window.closeCurrentModal = () => {
+        if(modal) { modal.style.display = 'none'; document.body.style.overflow = 'auto'; }
+    };
+
+    window.openSimulationModal = (modelName = '') => {
+        document.getElementById('form-type').value = "simulation";
+        document.getElementById('revision-info-box').style.display = 'none';
+        document.getElementById('simulation-header').style.display = 'block';
+        
+        // Hide/Show Rows & fields
+        document.getElementById('revision-top-row').style.display = 'none';
+        document.getElementById('field-nome-container').style.display = 'none';
+        document.getElementById('field-nome').required = false;
+        
+        // Contacts row: We show Telefone and CPF, hide Email
+        document.getElementById('contacts-row').style.gridTemplateColumns = '1fr 1fr';
+        document.getElementById('field-telefone-container').style.gridColumn = 'span 1';
+        document.getElementById('cpf-field-container').style.display = 'block';
+        document.getElementById('field-cpf').required = true;
+        document.getElementById('field-email-container').style.display = 'none';
+        document.getElementById('field-email').required = false;
+        
+        // Model & Year row: Show select, make full width (span 2), hide Year, hide model-text
+        document.getElementById('model-year-row').style.gridTemplateColumns = '1fr';
+        document.getElementById('model-field-container').style.gridColumn = 'span 1';
+        document.getElementById('field-modelo-texto').style.display = 'none';
+        document.getElementById('field-modelo-texto').required = false;
+        document.getElementById('field-modelo-select').style.display = 'block';
+        document.getElementById('field-modelo-select').required = true;
+        document.getElementById('ano-field-container').style.display = 'none';
+        
+        // Hide Observations
+        document.getElementById('field-obs-container').style.display = 'none';
+        document.getElementById('field-obs').required = false;
+        
+        // Titles and Text
+        document.getElementById('modal-title').innerText = "Simule seu parcelamento";
+        document.getElementById('modal-subtitle').innerText = "Preencha os dados para simularmos agora mesmo.";
+        document.getElementById('submit-btn').innerText = "Quero simular no WhatsApp";
+        
+        document.getElementById('field-data').required = false;
+        document.getElementById('field-horario').required = false;
+        
+        if(modelName) {
+            const sel = document.getElementById('field-modelo-select');
+            if(sel) {
+                for(let i=0; i<sel.options.length; i++) {
+                    if(sel.options[i].value.toLowerCase().includes(modelName.toLowerCase())) {
+                        sel.selectedIndex = i; break;
+                    }
+                }
+            }
+        }
+        
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    };
+
+    window.openRevisionModal = (cilindrada, price, type) => {
+        document.getElementById('form-type').value = "revision";
+        document.getElementById('revision-info-box').style.display = 'flex';
+        document.getElementById('simulation-header').style.display = 'none';
+        
+        // Hide/Show Rows & fields
+        document.getElementById('revision-top-row').style.display = 'grid';
+        document.getElementById('field-data').required = true;
+        document.getElementById('field-horario').required = true;
+        
+        document.getElementById('field-nome-container').style.display = 'block';
+        document.getElementById('field-nome').required = true;
+        
+        // Contacts row: Show Telefone and Email, hide CPF
+        document.getElementById('contacts-row').style.gridTemplateColumns = '1fr 1fr';
+        document.getElementById('field-telefone-container').style.gridColumn = 'span 1';
+        document.getElementById('cpf-field-container').style.display = 'none';
+        document.getElementById('field-cpf').required = false;
+        document.getElementById('field-email-container').style.display = 'block';
+        document.getElementById('field-email-container').style.gridColumn = 'span 1';
+        document.getElementById('field-email').required = true;
+        
+        // Model & Year row: Show model-text (span 1), show Year (span 1), hide select
+        document.getElementById('model-year-row').style.gridTemplateColumns = '1fr 1fr';
+        document.getElementById('model-field-container').style.gridColumn = 'span 1';
+        document.getElementById('field-modelo-texto').style.display = 'block';
+        document.getElementById('field-modelo-texto').required = true;
+        document.getElementById('field-modelo-select').style.display = 'none';
+        document.getElementById('field-modelo-select').required = false;
+        document.getElementById('ano-field-container').style.display = 'block';
+        
+        // Show Observations
+        document.getElementById('field-obs-container').style.display = 'block';
+        
+        document.getElementById('submit-btn').innerText = "Finalizar Agendamento";
+
+        document.getElementById('display-cilindrada').innerText = cilindrada;
+        document.getElementById('display-price').innerText = price;
+        document.getElementById('display-type').innerText = "Revisão " + type;
+
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    };
+
+    form.onsubmit = (e) => {
+        e.preventDefault();
+        const type = document.getElementById('form-type').value;
+        const nome = type === 'revision' ? document.getElementById('field-nome').value : '';
+        const tel = phoneInput.value;
+        const email = type === 'revision' ? document.getElementById('field-email').value : '';
+        const obs = type === 'revision' ? document.getElementById('field-obs').value : '';
+        
+        let msg = "";
+        if(type === 'revision') {
+            const dataRaw = document.getElementById('field-data').value;
+            const data = dataRaw.split('-').reverse().join('/');
+            const hora = document.getElementById('field-horario').value;
+            const moto = document.getElementById('field-modelo-texto').value;
+            const cilindrada = document.getElementById('display-cilindrada').innerText;
+            const preco = document.getElementById('display-price').innerText;
+            const revType = document.getElementById('display-type').innerText;
+            const ano = document.getElementById('field-ano').value;
+
+            msg = `Olá! Gostaria de agendar uma revisão.\n\n*Serviço:* ${revType}\n*Cilindrada:* ${cilindrada}\n*Preço:* ${preco}\n\n*Data:* ${data}\n*Horário:* ${hora}\n\n*Nome:* ${nome}\n*Telefone:* ${tel}\n*Email:* ${email}\n*Modelo:* ${moto}\n*Ano:* ${ano}\n*Observações:* ${obs}`;
+        } else {
+            const cpf = cpfInput.value;
+            const modelo = document.getElementById('field-modelo-select').value;
+            msg = `Olá! Gostaria de simular um parcelamento.\n\n*Modelo:* ${modelo}\n*Telefone:* ${tel}\n*CPF:* ${cpf}`;
+        }
+        
+        const url = 'https://api.whatsapp.com/send?phone=5566996134297&text=' + encodeURIComponent(msg);
+        const win = window.open(url, '_blank');
+        if(!win) window.location.href = url;
+        closeCurrentModal();
+    };
+
+    const hijack = () => {
+        const selectors = ['a', 'button', '.btn-primary', '.card-image', '.swiper-slide', '.open-modal', '.btn-link'];
+        document.querySelectorAll(selectors.join(',')).forEach(el => {
+            if(el.getAttribute('data-v4-hijacked')) return;
+            
+            const text = (el.innerText || el.textContent || '').toLowerCase().trim();
+            const words = ['simular', 'parcelar', 'interesse', 'queres', 'agendar', 'revisão', 'saiba mais', 'oferta', 'comprar', 'falar', 'consultor', 'telefone', 'contato', 'especialista', 'garantir', 'condição', 'fale', 'vendedor'];
+            const skip = el.closest('#unifiedModal') || el.closest('nav') || el.closest('.nav-menu') || el.closest('.mega-menu') || el.closest('.modal-container');
+            
+            const isRevision = text.includes('revisão') || el.hasAttribute('data-cilindrada') || el.hasAttribute('data-revisao');
+            const isWa = el.tagName === 'A' && el.getAttribute('href')?.includes('wa.me');
+            const match = words.some(w => text.includes(w)) || el.classList.contains('card-image') || el.classList.contains('swiper-slide') || isWa;
+
+            if(match && !skip) {
+                el.setAttribute('data-v4-hijacked', 'true');
+                el.onclick = (e) => {
+                    e.preventDefault(); e.stopPropagation();
+                    if(isRevision) {
+                        const card = el.closest('.revisao-card');
+                        const cilindrada = el.getAttribute('data-cilindrada') || card?.querySelector('h3')?.innerText || '125cc a 150cc';
+                        const priceText = el.getAttribute('data-price') || card?.querySelector('.amount')?.innerText || '159,90';
+                        const type = el.getAttribute('data-revisao') || 'Preventiva';
+                        const cleanPrice = 'R$ ' + priceText.replace(/R\$/g, '').trim();
+                        window.openRevisionModal(cilindrada, cleanPrice, type);
+                    } else {
+                        let mod = el.getAttribute('data-modelo') || '';
+                        const card = el.closest('.card') || el.closest('.swiper-slide') || el.closest('.revisao-card');
+                        if(!mod && card) {
+                            const t = card.querySelector('.card-title') || card.querySelector('h3') || card.querySelector('h1');
+                            if(t) mod = t.innerText.split('|')[0].replace('Shineray', '').trim();
+                        }
+                        window.openSimulationModal(mod);
+                    }
+                };
+            }
+        });
+    };
+
+    hijack();
+    setInterval(hijack, 3000);
+    window.addEventListener('click', (e) => { if(e.target === modal) closeCurrentModal(); });
+})();
+</script>
+<!-- END UNIFIED MODAL SYSTEM -->
+</body>
+</html>
